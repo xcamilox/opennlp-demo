@@ -17,7 +17,9 @@ public class PartOfSpeechTaggerMain
 		InputStream modelIn = null;
 		try
 		{
+			// modelIn = new FileInputStream( "models/en-pos.model" );
 			modelIn = new FileInputStream( "models/en-pos-maxent.bin" );
+			
 			POSModel model = new POSModel( modelIn );
 			
 			
