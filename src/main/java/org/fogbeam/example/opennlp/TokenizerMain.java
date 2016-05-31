@@ -13,6 +13,19 @@ import opennlp.tools.tokenize.TokenizerModel;
 
 public class TokenizerMain
 {
+	
+	/**
+	 * This print a list of tokens from a Text given. 
+	 * The url argument must specify an absolute {@link URL}. The name
+	 * argument is a specifier that is relative to the url argument. 
+	 * <p>
+	 * This method always returns immediately, whether or not the 
+	 * If the file donsen't exist will be throw an exception
+	 *
+	 * @param  args  a List of URL giving the base location of the text file to tokenizer
+	 * @return      void
+	 * @see         opennlp.tools.tokenize.Tokenizer
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		
