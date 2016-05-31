@@ -18,9 +18,6 @@ public class TokenizerMain {
 	 * This print a list of tokens from a Text given. The url argument must
 	 * specify an absolute {@link URL}. The name argument is a specifier that is
 	 * relative to the url argument.
-	 * <p>
-	 * This method always returns immediately, whether or not the If the file
-	 * donsen't exist will be throw an exception
 	 *
 	 * @param args
 	 *            a List of URL giving the base location of the text file to
@@ -30,16 +27,22 @@ public class TokenizerMain {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		// the provided model
-		// InputStream modelIn = new FileInputStream( "models/en-token.bin" );
 		if (args.length > 0 ){
-			
 			tokenizeFile(args[0]);
-			//tokenizeFile("demo_data/data.txt");
-			
 		}
 
 	}
+	
+	/**
+	 * This print a list of tokens from a Text given in English and return an Array of Strings. The url argument must
+	 * specify an absolute {@link URL}. The name argument is a specifier that is
+	 * relative to the url argument.
+	 *
+	 * @param String fileUrl is a giving the base location of the text file whit English text to
+	 *            tokenizer
+	 * @return String[]
+	 * @see opennlp.tools.tokenize.Tokenizer
+	 */
 
 	public static String[] tokenizeFile(String fileUrl)throws Exception {
 		
@@ -54,10 +57,7 @@ public class TokenizerMain {
 
 			Tokenizer tokenizer = new TokenizerME(model);
 
-			/*
-			 * note what happens with the "three depending on which model you
-			 * use
-			 */
+			
 			tokens = tokenizer.tokenize(textContent);
 
 			for (String token : tokens) {
