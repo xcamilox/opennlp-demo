@@ -5,6 +5,9 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
@@ -30,19 +33,22 @@ public class TokenizerMain {
 		// the provided model
 		// InputStream modelIn = new FileInputStream( "models/en-token.bin" );
 		if (args.length > 0 ){
+			
 			tokenizeFile(args[0]);
+			//tokenizeFile("demo_data/data.txt");
+			
 		}
 
 	}
 
-	public static void tokenizeFile(String fileUrl)throws Exception {
-
+	public static String[] tokenizeFile(String fileUrl)throws Exception {
+		
+		String[] tokens = null;
 		// the model we trained
 		InputStream modelIn = new FileInputStream("models/en-token.model");
-		File file = new File(fileUrl);
-		FileReader fileContent = new FileReader(file);
+		byte[] encoded = Files.readAllBytes(Paths.get(fileUrl));
+		String textContent =  new String(encoded, Charset.defaultCharset());
 		
-		fileContent.
 		try {
 			TokenizerModel model = new TokenizerModel(modelIn);
 
@@ -52,13 +58,13 @@ public class TokenizerMain {
 			 * note what happens with the "three depending on which model you
 			 * use
 			 */
-			String[] tokens = tokenizer.tokenize("A ranger journeying with Oglethorpe, founder of the Georgia Colony, "
-					+ " mentions \"three Mounts raised by the Indians over three of their Great Kings"
-					+ " who were killed in the Wars.\"");
+			tokens = tokenizer.tokenize(textContent);
 
 			for (String token : tokens) {
 				System.out.println(token);
 			}
+			
+		
 
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -71,5 +77,7 @@ public class TokenizerMain {
 			}
 		}
 		System.out.println("\n-----\ndone");
+		return tokens;
+		
 	}
 }
