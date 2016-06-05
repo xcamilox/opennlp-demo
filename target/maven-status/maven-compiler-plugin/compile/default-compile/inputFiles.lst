@@ -1,0 +1,14 @@
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/SentenceDetectionMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/ChunkerMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/ParserMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/SentenceDetectionTrainer.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/DocumentClassifierTrainer.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/DocumentClassifierMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/ChunkerTrainer.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/NameFinderMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/NameFinderTrainer.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/PartOfSpeechTaggerTrainer.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/TokenizerMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/ParserTrainer.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/PartOfSpeechTaggerMain.java
+/Users/camilojimenez/Documents/Universidad/Master/Ingenieria/gestioCalidad/jenkins-demo/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/training/TokenizerTrainer.java
